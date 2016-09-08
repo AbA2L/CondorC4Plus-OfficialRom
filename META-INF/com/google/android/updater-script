@@ -1,0 +1,198 @@
+ui_print("______________________________");
+ui_print("++++++++++++++++++++++++++++++");
+ui_print("******************************");
+ui_print("//////////////////////////////");
+ui_print("##############################");
+ui_print("===========WELCOME============");
+ui_print("•~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+ui_print("       MOLLYGUN FOR C4+       ");
+ui_print("              by             ");
+ui_print("          ===========       ");
+ui_print("             AbA2L           ");
+ui_print("•~~~~~~~~~~~~~~~~~~~~~~~~~~~•");
+
+show_progress(0.300000, 0);
+
+#FORMAT SYSTEM
+ui_print(" =============================");
+ui_print(" =============================");
+ui_print(" |        FORMATTING         |");
+ui_print(" =============================");
+ui_print(" =============================");
+ui_print(" formating /system partion...");
+format("ext4", "EMMC", "/dev/block/mmcblk0p3", "0");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p3", "/system");
+
+ui_print(" extracting /system image...");
+package_extract_dir("system", "/system");
+package_extract_file("check_data_app", "/tmp/check_data_app");
+set_perm(0, 0, 0777, "/tmp/check_data_app");
+run_program("/tmp/check_data_app");
+
+ui_print(" monting /data partion...");
+mount("ext4", "EMMC", "/dev/block/mmcblk0p5", "/data");
+package_extract_dir("data", "/data");
+set_perm_recursive(1000, 1000, 0771, 0644, "/data/app");
+set_perm_recursive(1000, 1000, 0771, 0644, "/data/xposed");
+
+#SYMLINK
+ui_print(" =============================");
+ui_print(" =============================");
+ui_print(" |        SYMLINKING         |");
+ui_print(" =============================");
+ui_print(" =============================");
+symlink("Roboto-Bold.ttf", "/system/fonts/DroidSans-Bold.ttf");
+symlink("Roboto-Regular.ttf", "/system/fonts/DroidSans.ttf");
+symlink("aee_aed", "/system/bin/debuggerd");
+symlink("mksh", "/system/bin/sh");
+symlink("toolbox", "/system/bin/cat");
+symlink("toolbox", "/system/bin/chmod");
+symlink("toolbox", "/system/bin/chown");
+symlink("toolbox", "/system/bin/cmp");
+symlink("toolbox", "/system/bin/cp");
+symlink("toolbox", "/system/bin/date");
+symlink("toolbox", "/system/bin/dd");
+symlink("toolbox", "/system/bin/df");
+symlink("toolbox", "/system/bin/dmesg");
+symlink("toolbox", "/system/bin/du");
+symlink("toolbox", "/system/bin/getevent");
+symlink("toolbox", "/system/bin/getprop");
+symlink("toolbox", "/system/bin/grep");
+symlink("toolbox", "/system/bin/hd");
+symlink("toolbox", "/system/bin/id");
+symlink("toolbox", "/system/bin/ifconfig");
+symlink("toolbox", "/system/bin/iftop");
+symlink("toolbox", "/system/bin/insmod");
+symlink("toolbox", "/system/bin/ioctl");
+symlink("toolbox", "/system/bin/ionice");
+symlink("toolbox", "/system/bin/kill");
+symlink("toolbox", "/system/bin/ln");
+symlink("toolbox", "/system/bin/log");
+symlink("toolbox", "/system/bin/ls");
+symlink("toolbox", "/system/bin/lsmod");
+symlink("toolbox", "/system/bin/lsof");
+symlink("toolbox", "/system/bin/md5");
+symlink("toolbox", "/system/bin/mkdir");
+symlink("toolbox", "/system/bin/mount");
+symlink("toolbox", "/system/bin/mv");
+symlink("toolbox", "/system/bin/nandread");
+symlink("toolbox", "/system/bin/netstat");
+symlink("toolbox", "/system/bin/newfs_msdos");
+symlink("toolbox", "/system/bin/notify");
+symlink("toolbox", "/system/bin/printenv");
+symlink("toolbox", "/system/bin/ps");
+symlink("toolbox", "/system/bin/reboot");
+symlink("toolbox", "/system/bin/renice");
+symlink("toolbox", "/system/bin/rm");
+symlink("toolbox", "/system/bin/rmdir");
+symlink("toolbox", "/system/bin/rmmod");
+symlink("toolbox", "/system/bin/route");
+symlink("toolbox", "/system/bin/schedtop");
+symlink("toolbox", "/system/bin/sendevent");
+symlink("toolbox", "/system/bin/setconsole");
+symlink("toolbox", "/system/bin/setprop");
+symlink("toolbox", "/system/bin/sleep");
+symlink("toolbox", "/system/bin/smd");
+symlink("toolbox", "/system/bin/start");
+symlink("toolbox", "/system/bin/stop");
+symlink("toolbox", "/system/bin/sync");
+symlink("toolbox", "/system/bin/top");
+symlink("toolbox", "/system/bin/touch");
+symlink("toolbox", "/system/bin/umount");
+symlink("toolbox", "/system/bin/uptime");
+symlink("toolbox", "/system/bin/vmstat");
+symlink("toolbox", "/system/bin/watchprops");
+symlink("toolbox", "/system/bin/wipe");
+symlink("p2p_mt6620.ko", "/system/lib/modules/p2p.ko");
+symlink("wlan_mt6620.ko", "/system/lib/modules/wlan.ko");
+show_progress(0.300000, 10);
+
+#PERMISSION
+ui_print(" =============================");
+ui_print(" =============================");
+ui_print(" =========PERMISSIONS=========");
+ui_print(" =============================");
+ui_print(" =============================");
+
+set_perm_recursive(0, 0, 0755, 0644, "/system");
+set_perm_recursive(0, 0, 0777, 0777, "/system/etc/init.d");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/bin");
+set_perm(0, 3003, 02750, "/system/bin/netcfg");
+set_perm(0, 3004, 02755, "/system/bin/ping");
+set_perm(0, 2000, 06750, "/system/bin/run-as");
+set_perm_recursive(1002, 1002, 0755, 0440, "/system/etc/bluetooth");
+set_perm(0, 0, 0755, "/system/etc/bluetooth");
+set_perm(1000, 1000, 0640, "/system/etc/bluetooth/auto_pairing.conf");
+set_perm(3002, 3002, 0444, "/system/etc/bluetooth/blacklist.conf");
+set_perm(1002, 1002, 0440, "/system/etc/dbus.conf");
+set_perm(1014, 2000, 0550, "/system/etc/dhcpcd/dhcpcd-run-hooks");
+set_perm(0, 2000, 0550, "/system/etc/init.goldfish.sh");
+set_perm_recursive(0, 0, 0755, 0555, "/system/etc/ppp");
+set_perm(0, 2000, 0755, "/system/vendor");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/vendor/bin");
+set_perm(0, 2000, 0755, "/system/vendor/lib");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/drm");
+set_perm(0, 0, 0644, "/system/vendor/lib/drm/libdrmwvmplugin.so");
+set_perm(0, 2000, 0755, "/system/vendor/lib/egl");
+set_perm_recursive(0, 2000, 0755, 0644, "/system/vendor/lib/hw");
+set_perm(0, 0, 0644, "/system/vendor/lib/hw/gralloc.mt6577.so");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/left_eye-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/nose_base-y0-yi45-p0-pi45-r0-ri20.lg_32/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/multi_pose_face_landmark_detectors.7/right_eye-y0-yi45-p0-pi45-r0-ri20.lg_32-2/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-r0-ri30.4a-v24/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rn30-ri30.5-v24/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/detection/yaw_roll_face_detectors.6/head-y0-yi45-p0-pi45-rp30-ri30.5-v24/full_model.bin");
+set_perm(0, 0, 0644, "/system/vendor/pittpatt/models/recognition/face.face.y0-y0-22-b-N/full_model.bin");
+set_perm_recursive(0, 2000, 0755, 0755, "/system/xbin");
+show_progress(0.200000, 0);
+
+#ROOT
+ui_print(" ==============================");
+ui_print(" ==============================");
+ui_print(" |           ROOTING          |");
+ui_print(" ==============================");
+ui_print(" ==============================");
+
+set_perm(0, 0, 06755, "/system/xbin/su");
+set_perm(0, 1000, 0755, "/system/xbin/busybox");
+run_program("/system/xbin/busybox", "--install", "-s", "/system/xbin");
+show_progress(0.200000, 10);
+
+#BOOT
+ui_print(" ==============================");
+ui_print(" ==============================");
+ui_print(" ==============================");
+ui_print("|    Installing  Boot Logo    |");
+ui_print(" ==============================");
+ui_print(" ==============================");
+ui_print(" ==============================");
+
+show_progress(0.100000, 0);
+package_extract_file("logo.bin", "/dev/logo");
+assert(package_extract_file("boot.img", "/tmp/boot.img"),
+       write_raw_image("/tmp/boot.img", "bootimg"),
+       delete("/tmp/boot.img"));
+show_progress(0.100000, 10);
+
+ui_print(" ================================");
+ui_print("_________________________________");
+ui_print("       ____  ____  __  _______    ");
+ui_print("      / __ \/ __ \/ | / / ___/    ");
+ui_print("     / / / / / / /  |/ / __/      ");
+ui_print("    / /_/ / /_/ / /|  / /___      ");
+ui_print("   /_____/\____/_/ |_/_____/      ");
+ui_print("                                  ");
+ui_print("     THANKS FOR DOWNLOADING       ");
+ui_print(" MollyGun PORTED BY    --AbA2L--  ");
+ui_print("---------------------------------");
+ui_print(" ================================");
+ui_print(" ================================");
+ui_print("     ======================      ");
+ui_print("     Installation Completed!!!!  ");
+ui_print("     ======================       ");
+ui_print("    Enjoy being MollyGun ROM...   ");
+
+ui_print(" unmounting /system pation...");
+unmount("/system"); 
+run_program("/sbin/sleep", "8");
+

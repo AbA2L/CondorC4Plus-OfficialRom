@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bottomToolers xmlns:launcher="http://schemas.android.com/apk/res/com.gionee.launcher">
+	<bottomTooler launcher:packageName="com.android.contacts"
+		launcher:className="com.android.contacts.activities.DialtactsActivity"
+		launcher:seat="0" />
+	<bottomTooler launcher:packageName="com.android.contacts"
+		launcher:className="com.android.contacts.DialtactsContactsEntryActivity"
+		launcher:seat="1"/>
+	<bottomTooler launcher:seat="2"/>
+	<bottomTooler launcher:packageName="com.android.mms"
+		launcher:className="com.android.mms.ui.BootActivity"
+		launcher:seat="3"/>
+	<bottomTooler launcher:packageName="com.android.browser"
+		launcher:className="com.android.browser.BrowserActivity"
+		launcher:seat="4"/>
+</bottomToolers>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string-array name="city_preset">
+        <item>Bordj</item>
+        <item>Setif</item>
+        <item>Annaba</item>
+        <item>Alger</item>
+        <item>Constantine</item>
+        <item>Oran</item>
+        <item>Biskra</item>
+        <item>M’sila</item>
+        <item>Boumerdes</item>
+        <item>Adrar</item>
+    </string-array>
+ <string name="default_city">Bordj</string>
+</resources>
+

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<apps xmlns:launcher="http://schemas.android.com/apk/res/com.gionee.launcher" >
+    <!-- example
+    <folder
+        launcher:seat="0"
+        launcher:title="folder" >
+        <folderItem
+            launcher:className="com.android.test.shortcut.InstallShortcutActivity"
+            launcher:packageName="com.android.test.shortcut"
+            launcher:seat="0" />
+    </folder>
+    -->
+    <app
+        launcher:className="com.android.contacts.activities.PeopleActivity"
+        launcher:packageName="com.android.contacts"
+        launcher:seat="0" />
+    <app
+        launcher:className="com.android.mms.ui.BootActivity"
+        launcher:packageName="com.android.mms"
+        launcher:seat="1" />
+    <app
+        launcher:className="com.android.contacts.activities.DialtactsActivity"
+        launcher:packageName="com.android.contacts"
+        launcher:seat="2" />
+    <app
+        launcher:className="com.ninesky.browsercommon.GuideActivity"
+        launcher:packageName="com.ninesky.sebrowser"
+        launcher:seat="3" />
+    <app
+        launcher:className="com.android.browser.GNBrowserActivity"
+        launcher:packageName="com.android.browser"
+        launcher:seat="4" />
+    <app
+        launcher:className="com.android.music.MusicLogoActivity"
+        launcher:packageName="com.android.music"
+        launcher:seat="5" />
+    <app
+        launcher:className="com.android.camera.CameraLauncher"
+        launcher:packageName="com.android.gallery3d"
+        launcher:seat="6" />
+    <app
+        launcher:className="com.android.gallery3d.app.Gallery"
+        launcher:packageName="com.android.gallery3d"
+        launcher:seat="7" />
+    <app
+        launcher:className="com.gionee.filemanager.FileExplorerTabActivity"
+        launcher:packageName="com.gionee.filemanager"
+        launcher:seat="8" />
+    <app
+        launcher:className="com.android.vending.AssetBrowserActivity"
+        launcher:packageName="com.android.vending"
+        launcher:seat="9" />
+    <app
+        launcher:className="com.android.deskclock.AlarmClock"
+        launcher:packageName="com.android.deskclock"
+        launcher:seat="10" />
+    <app
+        launcher:className="com.android.calendar.AllInOneActivity"
+        launcher:packageName="com.android.calendar"
+        launcher:seat="11" />
+    <app
+        launcher:className="com.android.settings.Settings"
+        launcher:packageName="com.android.settings"
+        launcher:seat="12" />
+    <app
+        launcher:className="com.facebook.katana.LoginActivity"
+        launcher:packageName="com.facebook.katana"
+        launcher:seat="13" />
+    <app
+        launcher:className="com.twitter.android.StartActivity"
+        launcher:packageName="com.twitter.android"
+        launcher:seat="14" />
+    <app
+        launcher:className="msn"
+        launcher:packageName="com.tencent.mm"
+        launcher:seat="15" />
+    <app
+        launcher:className="com.netqin.antivirus.AntiVirusSplash"
+        launcher:packageName="com.nqmobile.antivirus20.multilang"
+        launcher:seat="16" />
+    <app
+        launcher:className="gn.com.android.theme.ThemeGridActivity"
+        launcher:packageName="gn.com.android.theme"
+        launcher:seat="17" />
+    <app
+        launcher:className="com.google.android.youtube.app.honeycomb.Shell%24HomeActivity"
+        launcher:packageName="com.google.android.youtube"
+        launcher:seat="18" />
+    <app
+        launcher:className="com.google.android.googlequicksearchbox.SearchActivity"
+        launcher:packageName="com.google.android.googlequicksearchbox"
+        launcher:seat="19" />
+    <app
+        launcher:className="com.google.android.talk.SigningInActivity"
+        launcher:packageName="com.google.android.talk"
+        launcher:seat="20" />
+    <app
+        launcher:className="ly.peek.android.activity.MainActivity"
+        launcher:packageName="ly.peek.android"
+        launcher:seat="21" />
+    <app
+        launcher:className="com.android.email.activity.Welcome"
+        launcher:packageName="com.android.email"
+        launcher:seat="22" />
+    <app
+        launcher:className="com.google.android.gm.ConversationListActivityGmail"
+        launcher:packageName="com.google.android.gm"
+        launcher:seat="23" />
+    <app
+        launcher:className="cn.wps.moffice.documentmanager.PreStartActivity"
+        launcher:packageName="cn.wps.moffice_i18n"
+        launcher:seat="24" />
+    <app
+        launcher:className="com.v5music.YYMusicMain"
+        launcher:packageName="com.v5music"
+        launcher:seat="25" />
+    <app
+        launcher:className="Gameloft live"
+        launcher:packageName="com.gionee.aora.weather"
+        launcher:seat="26" />
+    <app
+        launcher:className="Gameloft asphalt6"
+        launcher:packageName="com.gionee.aora.pim"
+        launcher:seat="27" />
+    <app
+        launcher:className="Gameloft Shardash"
+        launcher:packageName="cn.aora.clock"
+        launcher:seat="28" />
+    <app
+        launcher:className="Gameloft littlebigcity"
+        launcher:packageName="com.youdao.dict"
+        launcher:seat="29" />
+    <app
+        launcher:className="org.cocos2dx.FishGame.FishingJoy"
+        launcher:packageName="org.cocos2dx.FishGame"
+        launcher:seat="30" />
+    <app
+        launcher:className="wala.chat.WalaClient"
+        launcher:packageName="wala.chat"
+        launcher:seat="31" />
+    <app
+        launcher:className="whats app"
+        launcher:packageName="com.tencent.mtt"
+        launcher:seat="32" />
+    <app
+        launcher:className="yahoo cricket"
+        launcher:packageName="com.mapbar.android.mapbarmap"
+        launcher:seat="33" />
+    <app
+        launcher:className="com.google.android.maps.MapsActivity"
+        launcher:packageName="com.google.android.apps.maps"
+        launcher:seat="34" />
+    <app
+        launcher:className="com.google.android.maps.driveabout.app.DestinationActivity"
+        launcher:packageName="com.google.android.apps.maps"
+        launcher:seat="35" />
+    <app
+        launcher:className="com.google.android.maps.PlacesActivity"
+        launcher:packageName="com.google.android.apps.maps"
+        launcher:seat="36" />
+    <app
+        launcher:className="com.google.android.maps.LatitudeActivity"
+        launcher:packageName="com.google.android.apps.maps"
+        launcher:seat="37" />
+    <app
+        launcher:className="jlzn.com.android.compass.JLZN_CompassActivity"
+        launcher:packageName="jlzn.com.android.compass"
+        launcher:seat="38" />
+    <app
+        launcher:className="com.android.calculator2.Calculator"
+        launcher:packageName="com.android.calculator2"
+        launcher:seat="39" />
+    <app
+        launcher:className="com.android.soundrecorder.SoundRecorder"
+        launcher:packageName="com.android.soundrecorder"
+        launcher:seat="40" />
+    <app
+        launcher:className="com.mediatek.FMRadio.FMRadioActivity"
+        launcher:packageName="com.mediatek.FMRadio"
+        launcher:seat="41" />
+    <app
+        launcher:className="com.mediatek.StkSelection.StkSelection"
+        launcher:packageName="com.mediatek.StkSelection"
+        launcher:seat="42" />
+
+</apps>

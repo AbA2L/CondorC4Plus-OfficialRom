@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<heavy-widgets xmlns:launcher="http://schemas.android.com/apk/res/com.gionee.launcher" >
+    <heavy-widget
+        launcher:className="123"
+        launcher:creator="com.gionee.launcher.test.TestCreator" />
+</heavy-widgets>

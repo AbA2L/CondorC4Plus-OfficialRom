@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="need_list">
+		<item>com.mediatek.wo3g.Wo3G</item>
+		<item>com.sinovatech.unicom.ui.WelcomeClient</item>
+		<item>com.infinit.wostore.ui.ZBeginActivity</item>
+		<item>com.neusoft.td.android.wo116114.activity.WelcomeActivity</item>
+		<item>com.asiainfo.android.MainActivity</item>
+		<item>com.chinaunicom.woyou.Main</item>
+	</string-array>
+
+</resources>

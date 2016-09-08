@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Config applications which you want to hide from main menu. If 
+	one appliation is configured to hide from main menu, then all
+	its shortcutwill be delete from database.  
+-->
+<apps xmlns:launcher="http://schemas.android.com/apk/res/com.gionee.launcher" >
+
+    <app
+        launcher:className="com.gaols.test1.testActivity"
+        launcher:packageName="com.gaols.test1" />
+
+    <app
+        launcher:className="com.gionee.launcher.GNLauncherActivity"
+        launcher:packageName="com.gionee.launcher" />
+
+    <!--
+    <app
+        launcher:className="gn.com.android.theme.ThemeGridActivity"
+        launcher:packageName="gn.com.android.theme" />
+    -->
+
+</apps>

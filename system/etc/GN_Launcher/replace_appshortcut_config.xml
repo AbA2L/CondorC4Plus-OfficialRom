@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<replace-appshortcuts xmlns:launcher="http://schemas.android.com/apk/res/com.gionee.launcher" >
+
+    <replace-appshortcut
+        launcher:newClassName="com.android.camera.CameraLauncher"
+        launcher:newPackageName="com.android.gallery3d"
+        launcher:oldClassName="com.android.camera"
+        launcher:oldPackageName="com.android.camera.Camera" />
+
+    <replace-appshortcut
+        launcher:newClassName="null"
+        launcher:newPackageName="null"
+        launcher:oldClassName="com.gaols.test1.testActivity"
+        launcher:oldPackageName="com.gaols.test1" />
+
+</replace-appshortcuts>

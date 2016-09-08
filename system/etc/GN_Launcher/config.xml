@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Desktop setting config start -->
+    <!-- gn_launcher_settings_preference start -->
+    <bool name="config_desktopLoop">true</bool>
+    <bool name="config_mainMenuLoop">false</bool>
+    <bool name="config_gestureUp">false</bool>
+    <bool name="config_gestureDown">false</bool>
+    <bool name="config_wallpaper_scroll">true</bool>
+    <bool name="fault_tolerant_on">true</bool>
+
+    <string name="config_wallPaperpos">0</string>
+    <string name="config_desktop_effects_type">7</string>
+    <string name="config_default_screen">2</string>
+    <string name="config_default_taobao_market_screen">1</string>
+
+    <bool name="config_enable_taobao_market">false</bool>
+
+    <string name="config_default_sreeen_number">5</string>
+    <!-- gn_launcher_settings_preference end -->
+
+    <integer name="config_highlights_color">0xffff6600</integer>
+    <integer name="config_highlights_color_focus">0xffff3300</integer>
+    <!-- Desktop setting config end -->
+
+    <bool name="config_debug_versions">false</bool>
+    <bool name="isVibrateForDragStart">false</bool>
+    <bool name="isVibrateForDragDrop">false</bool>
+    <bool name="isVibrateForRecycling">false</bool>
+    <bool name="isVibrateForUninstalling">false</bool>
+    <bool name="isVibrateForScreenChange">false</bool>
+    <bool name="isVibrateForDragging">false</bool>
+    <bool name="isOpenSystemVibrate">true</bool>
+    <!-- affect classic effecter -->
+    <bool name="showOverScrollGlow">true</bool>
+    <bool name="bEnableUnicomeSpec">false</bool>
+    <!-- Gionee: 20130726 chenrui modify begin -->
+    <!--
+    <bool name="bEnableEnterMainMenuAnimator">true</bool>
+    -->
+    <bool name="bEnableEnterMainMenuAnimator">false</bool>
+    <!-- Gionee: 20130726 chenrui modify end -->
+
+    <string name="config_default_indicator_type">1</string> <!-- only 0 and 1 make sense, 0 means classic, while 1 will use icecream indicator -->
+
+    <integer-array name="config_320_480">
+
+        <!-- Config Desktop Layer -->
+        <item>80</item> <!-- config_cell_width -->
+        <item>94</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>0</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>64</item> <!-- config_hot_seat_height -->
+        <item>5</item> <!-- config hotseat mirror height -->
+        <item>5</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>24</item> <!-- CFolderDrawable SnapShotW -->
+        <item>24</item> <!-- CFolderDrawable SnapShotH -->
+        <item>0</item> <!-- CFolderDrawable Padding -->
+        <item>45</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>4</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>80</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>101</item> <!-- config_MAIN_MENU_CELL_HEIGHT --> <!-- GIONEE: luohui 2012-08-15 modify to 100 CR00678080 -->
+        <item>0</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>45</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>147</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>45</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>5</item> <!-- config_EDITMODE_indicator_height -->
+        <item>3</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>139</item> <!-- config_EDITMODE_screen_snapshort_content_height(should less than config_EDITMODE_screen_snapshort_area_height) -->
+        <item>94</item> <!-- config_EDITMODE_screen_snapshort_content_width(should less than screenWidth/config_EDITMODE_max_visible_screen_snapshorts) -->
+        <item>0</item> <!-- config_EDITMODE_space_between_icon_text) -->
+        <item>45</item> <!-- config_EDITMODE_shortcut_icon_height) -->
+        <item>6</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>4</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDesktop Layer -->
+        <item>27</item> <!-- config MiniDesktopItemTopValue -->
+        <item>3</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>5</item> <!-- config_indicator_height -->
+        <item>64</item> <!-- config_icon_width -->
+        <item>64</item> <!-- config_icon_height -->
+        <item>16</item> <!-- font height -->
+        <item>60</item> <!-- Tray Icon Size -->
+        <item>12</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>35</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+        <item>45</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+    <integer-array name="config_480_800">
+
+        <!-- Config Desktop Layer -->
+        <item>120</item> <!-- config_cell_width -->
+        <item>162</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>3</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>100</item> <!-- config_hot_seat_height -->
+        <item>15</item> <!-- config hotseat mirror height -->
+        <item>15</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>36</item> <!-- CFolderDrawable SnapShotW -->
+        <item>36</item> <!-- CFolderDrawable SnapShotH -->
+        <item>2</item> <!-- CFolderDrawable Padding -->
+        <item>56</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>4</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>120</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>171</item> <!-- config_MAIN_MENU_CELL_HEIGHT -->
+        <item>11</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>67</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>222</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>72</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>5</item> <!-- config_EDITMODE_indicator_height -->
+        <item>3</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>208</item> <!-- config_EDITMODE_screen_snapshort_content_height(should less than config_EDITMODE_screen_snapshort_area_height) -->
+        <item>134</item> <!-- config_EDITMODE_screen_snapshort_content_width(should less than screenWidth/config_EDITMODE_max_visible_screen_snapshorts) -->
+        <item>3</item> <!-- config_EDITMODE_space_between_icon_text) -->
+        <item>72</item> <!-- config_EDITMODE_shortcut_icon_height) -->
+        <item>13</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>7</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDesktop Layer -->
+        <item>24</item> <!-- config MiniDesktopItemTopValue -->
+        <item>5</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>5</item> <!-- config_indicator_height -->
+        <item>100</item> <!-- config_icon_width -->
+        <item>100</item> <!-- config_icon_height -->
+        <item>18</item> <!-- font height -->
+        <item>62</item> <!-- Tray Icon Size -->
+        <item>17</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>46</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+
+        <item>70</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+    <integer-array name="config_480_728">
+
+        <!-- Config Desktop Layer -->
+        <item>120</item> <!-- config_cell_width -->
+        <item>144</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>11</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>100</item> <!-- config_hot_seat_height -->
+        <item>15</item> <!-- config hotseat mirror height -->
+        <item>15</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>36</item> <!-- CFolderDrawable SnapShotW -->
+        <item>36</item> <!-- CFolderDrawable SnapShotH -->
+        <item>2</item> <!-- CFolderDrawable Padding -->
+        <item>56</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>4</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>120</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>154</item> <!-- config_MAIN_MENU_CELL_HEIGHT -->
+        <item>11</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>67</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>198</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>72</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>5</item> <!-- config_EDITMODE_indicator_height -->
+        <item>3</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>190</item> <!-- config_EDITMODE_screen_snapshort_content_height(should less than config_EDITMODE_screen_snapshort_area_height) -->
+        <item>134</item> <!-- config_EDITMODE_screen_snapshort_content_width(should less than screenWidth/config_EDITMODE_max_visible_screen_snapshorts) -->
+        <item>5</item> <!-- config_EDITMODE_space_between_icon_text -->
+        <item>72</item> <!-- config_EDITMODE_shortcut_icon_height -->
+        <item>13</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>4</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDeskTop Layer -->
+        <item>24</item> <!-- config MiniDesktopItemTopValue -->
+        <item>5</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>5</item> <!-- config_indicator_height -->
+        <item>100</item> <!-- config_icon_width -->
+        <item>100</item> <!-- config_icon_height -->
+        <item>19</item> <!-- font height -->
+        <item>62</item> <!-- Tray Icon Size -->
+        <item>17</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>46</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+
+        <item>70</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+    <integer-array name="config_720_1184">
+
+        <!-- Config Desktop Layer -->
+        <item>180</item> <!-- config_cell_width -->
+        <item>237</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>14</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>144</item> <!-- config_hot_seat_height -->
+        <item>15</item> <!-- config hotseat mirror height -->
+        <item>15</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>48</item> <!-- CFolderDrawable SnapShotW -->
+        <item>48</item> <!-- CFolderDrawable SnapShotH -->
+        <item>2</item> <!-- CFolderDrawable Padding -->
+        <item>72</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>5</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>180</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>208</item> <!-- config_MAIN_MENU_CELL_HEIGHT -->
+        <item>14</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>80</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>285</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>96</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>6</item> <!-- config_EDITMODE_indicator_height -->
+        <item>4</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>279</item> <!-- config_EDITMODE_screen_snapshort_content_height -->
+        <item>174</item> <!-- config_EDITMODE_screen_snapshort_content_width -->
+        <item>9</item> <!-- config_EDITMODE_space_between_icon_text) -->
+        <item>96</item> <!-- config_EDITMODE_shortcut_icon_height) -->
+        <item>3</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>3</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDesktop Layer -->
+        <item>24</item> <!-- config MiniDesktopItemTopValue -->
+        <item>5</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>6</item> <!-- config_indicator_height -->
+        <item>136</item> <!-- config_icon_width -->
+        <item>136</item> <!-- config_icon_height -->
+        <item>26</item> <!-- font height -->
+        <item>110</item> <!-- Tray Icon Size -->
+        <item>28</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>80</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+
+        <item>80</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+    <integer-array name="config_540_960">
+
+        <!-- Config Desktop Layer -->
+        <item>135</item> <!-- config_cell_width -->
+        <item>197</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>2</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>108</item> <!-- config_hot_seat_height -->
+        <item>15</item> <!-- config hotseat mirror height -->
+        <item>15</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>36</item> <!-- CFolderDrawable SnapShotW -->
+        <item>36</item> <!-- CFolderDrawable SnapShotH -->
+        <item>2</item> <!-- CFolderDrawable Padding -->
+        <item>56</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>5</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>135</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>168</item> <!-- config_MAIN_MENU_CELL_HEIGHT -->
+        <item>15</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>78</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>249</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>78</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>9</item> <!-- config_EDITMODE_indicator_height -->
+        <item>3</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>211</item> <!-- config_EDITMODE_screen_snapshort_content_height(should less than config_EDITMODE_screen_snapshort_area_height) -->
+        <item>132</item> <!-- config_EDITMODE_screen_snapshort_content_width(should less than screenWidth/config_EDITMODE_max_visible_screen_snapshorts) -->
+        <item>2</item> <!-- config_EDITMODE_space_between_icon_text) -->
+        <item>90</item> <!-- config_EDITMODE_shortcut_icon_height) -->
+        <item>14</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>13</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDesktop Layer -->
+        <item>24</item> <!-- config MiniDesktopItemTopValue -->
+        <item>8</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>5</item> <!-- config_indicator_height -->
+        <item>100</item> <!-- config_icon_width -->
+        <item>100</item> <!-- config_icon_height -->
+        <item>21</item> <!-- font height -->
+        <item>62</item> <!-- Tray Icon Size -->
+        <item>17</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>60</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+        <item>80</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+    <integer-array name="config_540_888">
+
+        <!-- Config Desktop Layer -->
+        <item>135</item> <!-- config_cell_width -->
+        <item>180</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>14</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>100</item> <!-- config_hot_seat_height -->
+        <item>15</item> <!-- config hotseat mirror height -->
+        <item>15</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>36</item> <!-- CFolderDrawable SnapShotW -->
+        <item>36</item> <!-- CFolderDrawable SnapShotH -->
+        <item>2</item> <!-- CFolderDrawable Padding -->
+        <item>56</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>4</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>135</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>180</item> <!-- config_MAIN_MENU_CELL_HEIGHT -->
+        <item>11</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>90</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>222</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>72</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>5</item> <!-- config_EDITMODE_indicator_height -->
+        <item>3</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>208</item> <!-- config_EDITMODE_screen_snapshort_content_height(should less than config_EDITMODE_screen_snapshort_area_height) -->
+        <item>134</item> <!-- config_EDITMODE_screen_snapshort_content_width(should less than screenWidth/config_EDITMODE_max_visible_screen_snapshorts) -->
+        <item>11</item> <!-- config_EDITMODE_space_between_icon_text) -->
+        <item>72</item> <!-- config_EDITMODE_shortcut_icon_height) -->
+        <item>13</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>7</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDesktop Layer -->
+        <item>24</item> <!-- config MiniDesktopItemTopValue -->
+        <item>5</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>5</item> <!-- config_indicator_height -->
+        <item>100</item> <!-- config_icon_width -->
+        <item>100</item> <!-- config_icon_height -->
+        <item>22</item> <!-- font height -->
+        <item>62</item> <!-- Tray Icon Size -->
+        <item>17</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>60</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+        <item>80</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+    <integer-array name="config_480_854">
+
+        <!-- Config Desktop Layer -->
+        <item>120</item> <!-- config_cell_width -->
+        <item>174</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>14</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>102</item> <!-- config_hot_seat_height -->
+        <item>15</item> <!-- config hotseat mirror height -->
+        <item>15</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>36</item> <!-- CFolderDrawable SnapShotW -->
+        <item>36</item> <!-- CFolderDrawable SnapShotH -->
+        <item>2</item> <!-- CFolderDrawable Padding -->
+        <item>56</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>4</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>120</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>183</item> <!-- config_MAIN_MENU_CELL_HEIGHT -->
+        <item>11</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>78</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>222</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>78</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>5</item> <!-- config_EDITMODE_indicator_height -->
+        <item>3</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>208</item> <!-- config_EDITMODE_screen_snapshort_content_height(should less than config_EDITMODE_screen_snapshort_area_height) -->
+        <item>134</item> <!-- config_EDITMODE_screen_snapshort_content_width(should less than screenWidth/config_EDITMODE_max_visible_screen_snapshorts) -->
+        <item>11</item> <!-- config_EDITMODE_space_between_icon_text) -->
+        <item>72</item> <!-- config_EDITMODE_shortcut_icon_height) -->
+        <item>13</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>7</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDesktop Layer -->
+        <item>24</item> <!-- config MiniDesktopItemTopValue -->
+        <item>5</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>8</item> <!-- config_indicator_height -->
+        <item>100</item> <!-- config_icon_width -->
+        <item>100</item> <!-- config_icon_height -->
+        <item>21</item> <!-- font height -->
+        <item>62</item> <!-- Tray Icon Size -->
+        <item>17</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>38</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+        <item>80</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+    <integer-array name="config_720_1280">
+
+        <!-- Config Desktop Layer -->
+        <item>180</item> <!-- config_cell_width -->
+        <item>262</item> <!-- config_cell_height -->
+        <item>4</item> <!-- COLUMN_NUM -->
+        <item>4</item> <!-- ROW_NUM -->
+        <item>3</item> <!-- space between text and icon -->
+
+
+        <!-- Config HotSeat Layer -->
+        <item>5</item> <!-- config hotseat column num -->
+        <item>1</item> <!-- config hotseat row num -->
+        <item>144</item> <!-- config_hot_seat_height -->
+        <item>15</item> <!-- config hotseat mirror height -->
+        <item>15</item> <!-- config hotseat Icon Reflection height -->
+
+
+        <!-- Config Folder Layer -->
+        <item>48</item> <!-- CFolderDrawable SnapShotW -->
+        <item>48</item> <!-- CFolderDrawable SnapShotH -->
+        <item>2</item> <!-- CFolderDrawable Padding -->
+        <item>72</item> <!-- config FOLDER_NAMEAREA_HEIGHT -->
+
+
+        <!-- Config MainMenu Layer -->
+        <item>4</item> <!-- MAIN_MENU_COLUMN_NUM -->
+        <item>5</item> <!-- MAIN_MENU_ROW_NUM -->
+        <item>180</item> <!-- config_MAIN_MENU_CELL_WIDTH -->
+        <item>223</item> <!-- config_MAIN_MENU_CELL_HEIGHT -->
+        <item>4</item> <!-- MAIN_MENU_SPACE_IN_ICON_TEXT -->
+        <item>102</item> <!-- config MainMenu tab height -->
+
+
+        <!-- Config EditMode Layer -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_column_num -->
+        <item>4</item> <!-- config_EDITMODE_appshortcut_row_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_column_num -->
+        <item>2</item> <!-- config_EDITMODE_widget_row_num -->
+        <item>4</item> <!-- config_EDITMODE_shortcut_column_num -->
+        <item>3</item> <!-- config_EDITMODE_shortcut_row_num -->
+        <item>285</item> <!-- config_EDITMODE_screen_snapshort_area_height -->
+        <item>102</item> <!-- config_EDITMODE_bottom_tab_height -->
+        <item>11</item> <!-- config_EDITMODE_indicator_height -->
+        <item>4</item> <!-- config_EDITMODE_max_visible_screen_snapshorts -->
+        <item>279</item> <!-- config_EDITMODE_screen_snapshort_content_height -->
+        <item>174</item> <!-- config_EDITMODE_screen_snapshort_content_width -->
+        <item>9</item> <!-- config_EDITMODE_space_between_icon_text) -->
+        <item>96</item> <!-- config_EDITMODE_shortcut_icon_height) -->
+        <item>3</item> <!-- config_EDITMODE_screen_snap_margin_left(right) -->
+        <item>3</item> <!-- config_EDITMODE_screen_snap_margin_top(bottom) -->
+
+
+        <!-- Config MiniDesktop Layer -->
+        <item>24</item> <!-- config MiniDesktopItemTopValue -->
+        <item>5</item> <!-- config MiniDesktopItemPadding -->
+
+
+        <!-- Config Global -->
+        <item>8</item> <!-- config_indicator_height -->
+        <item>136</item> <!-- config_icon_width -->
+        <item>136</item> <!-- config_icon_height -->
+        <item>26</item> <!-- font height -->
+        <item>110</item> <!-- Tray Icon Size -->
+        <item>28</item> <!-- MISS_CALL_AND_Mms_NUM_Size -->
+
+
+        <!-- Config HIGHLIGHT_BG -->
+        <item>0xDAFF0000</item> <!-- del_highLight_bg -->
+        <item>0xff33b5e5</item> <!-- drag_highLight_bg -->
+
+
+        <!-- Config Deletion Layer -->
+        <item>80</item>
+
+        <!-- Config Shrinked desktop width and height -->
+        <item>-1</item> <!-- config_shrinked_desktop_width -->
+        <item>-1</item> <!-- config_shrinked_desktop_height -->
+
+        <item>2</item> <!-- CFolderDrawable SnapShot ROW_NUM -->
+        <item>2</item> <!-- CFolderDrawable SnapShot COLUMN_NUM -->
+        <item>80</item> <!-- SUPER_FOLDER_BOTTOM_SHORTCUT_HEIGHT -->
+    </integer-array>
+
+</resources>

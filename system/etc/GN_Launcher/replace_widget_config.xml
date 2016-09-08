@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<replace-widgets xmlns:launcher="http://schemas.android.com/apk/res/com.gionee.launcher" >
+
+    <replace-widget
+        launcher:newClassName="com.coolwind.weather.AnimationWidget"
+        launcher:newPackageName="com.coolwind.weather"
+        launcher:oldClassName="com.gionee.aora.weather.Widget4_2"
+        launcher:oldPackageName="com.gionee.aora.weather" />
+    <replace-widget
+        launcher:newClassName="com.gionee.music.MediaAppWidgetProvider"
+        launcher:newPackageName="com.gionee.music"
+        launcher:oldClassName="com.android.music.MediaAppWidgetProvider"
+        launcher:oldPackageName="com.android.music" />
+
+</replace-widgets>
